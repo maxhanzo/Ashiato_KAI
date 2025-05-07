@@ -1,12 +1,12 @@
 //
-//  Immigrant.swift
+//  ImmigrantDTO.swift
 //  Ashiato: KAI
 //
 //  Created by UedaSoft IT Solutions on 05/05/25.
 //
 import Foundation
 
-struct Immigrant: Codable {
+public struct ImmigrantDTO: Codable {
     let immigrantID: Int
     let groupID: Int
     let destination: String
