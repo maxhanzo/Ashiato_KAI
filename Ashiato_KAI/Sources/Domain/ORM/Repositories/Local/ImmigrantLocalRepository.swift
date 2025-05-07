@@ -32,6 +32,7 @@ extension ImmigrantLocalRepository: ImmigrantRepository {
             }
             .eraseToAnyPublisher()
     }
+    
     public func save(_ immigrants: [ImmigrantOM]) -> AnyPublisher<[ImmigrantOM], any Error> {
         dataBase
             .insert(immigrants, autoSave: true)
@@ -42,9 +43,9 @@ extension ImmigrantLocalRepository: ImmigrantRepository {
             .eraseToAnyPublisher()
     }
     
-    public func getImmigrant(_ byID: Int) -> AnyPublisher<ImmigrantOM?, any Error> {
+    public func fetchImmigrant(_ byId: Int) -> AnyPublisher<ImmigrantOM?, any Error> {
         let settings: FetchSettings<ImmigrantOM> = .init(
-            predicate: #Predicate { $0.immigrantID == byID },
+            predicate: #Predicate { $0.immigrantId == byId },
             limit: 1
         )
         
@@ -56,9 +57,9 @@ extension ImmigrantLocalRepository: ImmigrantRepository {
             .eraseToAnyPublisher()
     }
     
-    public func getImmigrants(_ byGroupID: Int) -> AnyPublisher<[ImmigrantOM], any Error> {
+    public func fetch(_ byGroupId: Int) -> AnyPublisher<[ImmigrantOM], any Error> {
         let settings: FetchSettings<ImmigrantOM> = .init(
-            predicate: #Predicate { $0.groupID == byGroupID }
+            predicate: #Predicate { $0.groupId == byGroupId }
         )
         
         return dataBase.fetch(settings)
@@ -67,4 +68,21 @@ extension ImmigrantLocalRepository: ImmigrantRepository {
             }
             .eraseToAnyPublisher()
     }
+    
+    public func getImmigrant(_ parameters: ImmigrantSearchDTO) -> AnyPublisher<ImmigrantDTO?, Error> {
+        guard let id = parameters.immigrantId else {
+            return Fail(error: ImmigrantError.invalidSearchParameters).eraseToAnyPublisher()
+        }
+        
+        return fetchImmigrant(id)
+            .map { $0?.toDTO() }
+            .eraseToAnyPublisher()
+    }
+    
+    public func getImmigrants(_ groupID: Int) -> AnyPublisher<[ImmigrantDTO], Error> {
+        return fetch(groupID)
+            .map { $0.map { $0.toDTO() } }
+            .eraseToAnyPublisher()
+    }
+
 }

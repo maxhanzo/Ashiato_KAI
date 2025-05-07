@@ -8,6 +8,7 @@
 import Foundation
 
 public struct ImmigrantSearchDTO: Codable {
+    let immigrantId: Int?
     let nameRomaji: String?
     let surnameRomaji: String?
     let groupId: Int?
@@ -21,6 +22,9 @@ public struct ImmigrantSearchDTO: Codable {
 extension ImmigrantSearchDTO {
     var asQueryParameters: [String: Any] {
         var params: [String: Any] = [:]
+        if let immigrantId = immigrantId {
+            params["immigrantId"] = "eq\(immigrantId)"
+        }
         if let nameRomaji = nameRomaji {
             params["nameRomaji"] = "ilike.%25\(nameRomaji)%25"
         }
@@ -48,3 +52,5 @@ extension ImmigrantSearchDTO {
         return params
     }
 }
+
+

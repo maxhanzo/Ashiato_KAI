@@ -12,6 +12,7 @@ public enum ImmigrantError: ErrorMappable {
     case couldntFindImmigrant
     case couldntSaveImmigrant
     case couldntSaveImmigrants
+    case invalidSearchParameters
 }
 
 extension ImmigrantError {
@@ -33,6 +34,10 @@ extension ImmigrantError {
             return """
             ❌ Couldn't save immigrants' information  ❌
             """
+        case .invalidSearchParameters:
+            return """
+            ❌ Couldn't save immigrants' information due to invalid parameters ❌
+            """
         }
     }
     
@@ -43,7 +48,10 @@ extension ImmigrantError {
              .couldntSaveImmigrant,
              .couldntSaveImmigrants:
             return "Something went wrong. Please check your internet connection and try again"
+        case .invalidSearchParameters:
+            return "Invalid parameters. Please check your parameters and try again"
         }
+        
     }
 }
 

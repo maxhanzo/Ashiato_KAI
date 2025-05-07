@@ -23,3 +23,26 @@ public struct ImmigrantDTO: Codable {
     let companions: String
     let station: String
 }
+
+extension ImmigrantDTO {
+    func toOM() -> ImmigrantOM {
+        ImmigrantOM(
+            id: immigrantID, // or another UUID you generate
+            immigrantID: immigrantID,
+            groupID: groupID,
+            destination: destination,
+            year: year,
+            farm: farm,
+            arrivalDate: arrivalDate.toDate(),
+            departureDate: departureDate.toDate(),
+            shipName: shipName,
+            prefectureName: prefectureName,
+            nameRomaji: nameRomaji,
+            surnameRomaji: surnameRomaji,
+            surnameKanji: surnameKanji,
+            nameKanji: nameKanji,
+            companions: companions,
+            station: station
+        )
+    }
+}

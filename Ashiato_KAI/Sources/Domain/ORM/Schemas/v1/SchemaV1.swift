@@ -22,8 +22,8 @@ extension SchemaV1 {
         @Attribute(.unique)
         public var id: Int
 
-        public var immigrantID: Int
-        public var groupID: Int
+        public var immigrantId: Int
+        public var groupId: Int
         public var destination: String
         public var year: Int
         public var farm: String
@@ -40,8 +40,8 @@ extension SchemaV1 {
         
         public init(id: Int, immigrantID: Int, groupID: Int, destination: String, year: Int, farm: String, arrivalDate: String, departureDate: String, shipName: String, prefectureName: String, nameRomaji: String, surnameRomaji: String, surnameKanji: String, nameKanji: String, companions: String, station: String) {
             self.id = id
-            self.immigrantID = immigrantID
-            self.groupID = groupID
+            self.immigrantId = immigrantID
+            self.groupId = groupID
             self.destination = destination
             self.year = year
             self.farm = farm
@@ -56,5 +56,47 @@ extension SchemaV1 {
             self.companions = companions
             self.station = station
         }
+        
+        public init(id: Int, immigrantID: Int, groupID: Int, destination: String, year: Int, farm: String, arrivalDate: Date, departureDate: Date, shipName: String, prefectureName: String, nameRomaji: String, surnameRomaji: String, surnameKanji: String, nameKanji: String, companions: String, station: String) {
+            self.id = id
+            self.immigrantId = immigrantID
+            self.groupId = groupID
+            self.destination = destination
+            self.year = year
+            self.farm = farm
+            self.arrivalDate = arrivalDate
+            self.departureDate = departureDate
+            self.shipName = shipName
+            self.prefectureName = prefectureName
+            self.nameRomaji = nameRomaji
+            self.surnameRomaji = surnameRomaji
+            self.surnameKanji = surnameKanji
+            self.nameKanji = nameKanji
+            self.companions = companions
+            self.station = station
+        }
+    }
+}
+
+
+extension ImmigrantOM {
+    func toDTO() -> ImmigrantDTO {
+        ImmigrantDTO(
+            immigrantID: immigrantId,
+            groupID: groupId,
+            destination: destination,
+            year: year,
+            farm: farm,
+            arrivalDate: arrivalDate.toString(),
+            departureDate: departureDate.toString(),
+            shipName: shipName,
+            prefectureName: prefectureName,
+            nameRomaji: nameRomaji,
+            surnameRomaji: surnameRomaji,
+            surnameKanji: surnameKanji,
+            nameKanji: nameKanji,
+            companions: companions,
+            station: station
+        )
     }
 }
