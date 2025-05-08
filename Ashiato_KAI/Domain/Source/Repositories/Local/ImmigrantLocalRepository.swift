@@ -5,7 +5,6 @@
 //  Created by Max Ueda on 07/05/25.
 //
 
-
 import Combine
 import Foundation
 
@@ -30,7 +29,6 @@ extension ImmigrantLocalRepository: ImmigrantRepository {
     public func getImmigrants(_ groupID: Int) -> AnyPublisher<[ImmigrantOM], any Error> {
         fatalError("Service not implemented!")
     }
-    
     
     public func save(_ immigrant: ImmigrantOM) -> AnyPublisher<ImmigrantOM, any Error> {
         dataBase
