@@ -8,5 +8,5 @@
 import Combine
 
 public protocol ImmigrantServiceInterface {
-    func getImmigrants(searchDTO: ImmigrantSearchDTO) -> AnyPublisher<ImmigrantSearchDTO, any Error>
+    func getImmigrants(searchDTO: ImmigrantSearchDTO) -> AnyPublisher<[ImmigrantDTO], any Error>
 }

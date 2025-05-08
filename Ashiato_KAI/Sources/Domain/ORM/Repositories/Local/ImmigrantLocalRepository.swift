@@ -23,6 +23,15 @@ public struct ImmigrantLocalRepository {
 }
 
 extension ImmigrantLocalRepository: ImmigrantRepository {
+    public func getImmigrant(_ parameters: ImmigrantSearchDTO) -> AnyPublisher<[ImmigrantOM], any Error> {
+        fatalError("Service not implemented!")
+    }
+
+    public func getImmigrants(_ groupID: Int) -> AnyPublisher<[ImmigrantOM], any Error> {
+        fatalError("Service not implemented!")
+    }
+    
+    
     public func save(_ immigrant: ImmigrantOM) -> AnyPublisher<ImmigrantOM, any Error> {
         dataBase
             .insert(immigrant, autoSave: true)
@@ -68,21 +77,4 @@ extension ImmigrantLocalRepository: ImmigrantRepository {
             }
             .eraseToAnyPublisher()
     }
-    
-    public func getImmigrant(_ parameters: ImmigrantSearchDTO) -> AnyPublisher<ImmigrantDTO?, Error> {
-        guard let id = parameters.immigrantId else {
-            return Fail(error: ImmigrantError.invalidSearchParameters).eraseToAnyPublisher()
-        }
-        
-        return fetchImmigrant(id)
-            .map { $0?.toDTO() }
-            .eraseToAnyPublisher()
-    }
-    
-    public func getImmigrants(_ groupID: Int) -> AnyPublisher<[ImmigrantDTO], Error> {
-        return fetch(groupID)
-            .map { $0.map { $0.toDTO() } }
-            .eraseToAnyPublisher()
-    }
-
 }

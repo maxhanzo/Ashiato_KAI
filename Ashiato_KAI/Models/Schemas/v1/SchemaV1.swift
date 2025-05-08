@@ -20,8 +20,6 @@ extension SchemaV1 {
     @Model
     public final class ImmigrantOM {
         @Attribute(.unique)
-        public var id: Int
-
         public var immigrantId: Int
         public var groupId: Int
         public var destination: String
@@ -38,10 +36,9 @@ extension SchemaV1 {
         public var companions: String
         public var station: String
         
-        public init(id: Int, immigrantID: Int, groupID: Int, destination: String, year: Int, farm: String, arrivalDate: String, departureDate: String, shipName: String, prefectureName: String, nameRomaji: String, surnameRomaji: String, surnameKanji: String, nameKanji: String, companions: String, station: String) {
-            self.id = id
-            self.immigrantId = immigrantID
-            self.groupId = groupID
+        public init(immigrantId: Int, groupId: Int, destination: String, year: Int, farm: String, arrivalDate: String, departureDate: String, shipName: String, prefectureName: String, nameRomaji: String, surnameRomaji: String, surnameKanji: String, nameKanji: String, companions: String, station: String) {
+            self.immigrantId = immigrantId
+            self.groupId = groupId
             self.destination = destination
             self.year = year
             self.farm = farm
@@ -57,10 +54,9 @@ extension SchemaV1 {
             self.station = station
         }
         
-        public init(id: Int, immigrantID: Int, groupID: Int, destination: String, year: Int, farm: String, arrivalDate: Date, departureDate: Date, shipName: String, prefectureName: String, nameRomaji: String, surnameRomaji: String, surnameKanji: String, nameKanji: String, companions: String, station: String) {
-            self.id = id
-            self.immigrantId = immigrantID
-            self.groupId = groupID
+        public init(immigrantId: Int, groupId: Int, destination: String, year: Int, farm: String, arrivalDate: Date, departureDate: Date, shipName: String, prefectureName: String, nameRomaji: String, surnameRomaji: String, surnameKanji: String, nameKanji: String, companions: String, station: String) {
+            self.immigrantId = immigrantId
+            self.groupId = groupId
             self.destination = destination
             self.year = year
             self.farm = farm
@@ -82,8 +78,8 @@ extension SchemaV1 {
 extension ImmigrantOM {
     func toDTO() -> ImmigrantDTO {
         ImmigrantDTO(
-            immigrantID: immigrantId,
-            groupID: groupId,
+            immigrantId: immigrantId,
+            groupId: groupId,
             destination: destination,
             year: year,
             farm: farm,

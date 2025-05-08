@@ -13,6 +13,6 @@ public protocol ImmigrantRepository {
     func save(_ immigrants: [ImmigrantOM]) -> AnyPublisher<[ImmigrantOM], any Error>
     func fetchImmigrant(_ id: Int) -> AnyPublisher<ImmigrantOM?, any Error>
     func fetch(_ groupID: Int) -> AnyPublisher<[ImmigrantOM], any Error>
-    func getImmigrant(_ parameters: ImmigrantSearchDTO) -> AnyPublisher<ImmigrantDTO?, any Error>
-    func getImmigrants(_ groupID: Int) -> AnyPublisher<[ImmigrantDTO], any Error>
+    func getImmigrant(_ parameters: ImmigrantSearchDTO) -> AnyPublisher<[ImmigrantOM], any Error>
+    func getImmigrants(_ groupID: Int) -> AnyPublisher<[ImmigrantOM], any Error>
 }

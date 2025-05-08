@@ -7,8 +7,8 @@
 import Foundation
 
 public struct ImmigrantDTO: Codable {
-    let immigrantID: Int
-    let groupID: Int
+    let immigrantId: Int
+    let groupId: Int
     let destination: String
     let year: Int
     let farm: String
@@ -27,9 +27,8 @@ public struct ImmigrantDTO: Codable {
 extension ImmigrantDTO {
     func toOM() -> ImmigrantOM {
         ImmigrantOM(
-            id: immigrantID, // or another UUID you generate
-            immigrantID: immigrantID,
-            groupID: groupID,
+            immigrantId: immigrantId,
+            groupId: groupId,
             destination: destination,
             year: year,
             farm: farm,
