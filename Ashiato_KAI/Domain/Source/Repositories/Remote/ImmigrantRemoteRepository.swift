@@ -32,32 +32,32 @@ extension ImmigrantRemoteRepository: ImmigrantRepository {
         fatalError("Service not implemented!")
     }
     
-    public func fetchImmigrant(_ id: Int) -> AnyPublisher<ImmigrantOM?, any Error> {
-        fatalError("Service not implemented!")
+    public func fetchImmigrant(_ id: Int) -> AnyPublisher<ImmigrantOM?, Error> {
+        let parameters = ImmigrantSearchDTO(immigrantId: id)
+        
+        return self.fetchImmigrants(parameters)
+            .map { immigrants in
+                immigrants.first { $0.immigrantId == id }
+            }
+            .eraseToAnyPublisher()
     }
     
-    public func fetch(_ groupID: Int) -> AnyPublisher<[ImmigrantOM], any Error> {
-        fatalError("Service not implemented!")
-    }
-    
-    public func getImmigrant(_ parameters: ImmigrantSearchDTO) -> AnyPublisher<[ImmigrantOM], any Error> {
+    public func fetchImmigrants(_ parameters: ImmigrantSearchDTO) -> AnyPublisher<[ImmigrantOM], any Error> {
         service
             .getImmigrants(searchDTO: parameters)
             .mapModel()
             .eraseToAnyPublisher()
     }
     
-    public func getImmigrants(_ groupID: Int) -> AnyPublisher<[ImmigrantOM], any Error> {
-        do {
-            let parameters = try ImmigrantSearchDTO(from: groupID as! Decoder)
-            return service
-                .getImmigrants(searchDTO: parameters)
-                .mapModel()
-                .eraseToAnyPublisher()
-        } catch {
-            return Fail(error: error)
-                .eraseToAnyPublisher()
-        }
+    public func fetchImmigrants(_ groupId: Int) -> AnyPublisher<[ImmigrantOM], any Error> {
+        
+        let parameters = ImmigrantSearchDTO(groupId: groupId)
+        
+        return self.fetchImmigrants(parameters)
+            .map { immigrants in
+                immigrants.filter { $0.groupId == groupId }
+            }
+            .eraseToAnyPublisher()
     }
-
+    
 }

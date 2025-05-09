@@ -17,6 +17,27 @@ public struct ImmigrantSearchDTO: Codable {
     let departureDate: String?
     let shipName: String?
     let prefectureName: String?
+    
+    public init(
+         immigrantId: Int? = nil,
+         nameRomaji: String? = nil,
+         surnameRomaji: String? = nil,
+         groupId: Int? = nil,
+         year: Int? = nil,
+         arrivalDate: String? = nil,
+         departureDate: String? = nil,
+         shipName: String? = nil,
+         prefectureName: String? = nil) {
+        self.immigrantId = immigrantId
+        self.nameRomaji = nameRomaji
+        self.surnameRomaji = surnameRomaji
+        self.groupId = groupId
+        self.year = year
+        self.arrivalDate = arrivalDate
+        self.departureDate = departureDate
+        self.shipName = shipName
+        self.prefectureName = prefectureName
+    }
 }
 
 extension ImmigrantSearchDTO {

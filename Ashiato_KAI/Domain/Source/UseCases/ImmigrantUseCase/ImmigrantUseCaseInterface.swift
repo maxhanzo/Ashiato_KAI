@@ -9,6 +9,7 @@ import Combine
 import Foundation
 
 public protocol ImmigrantUseCaseInterface {
-    func fetchImmigrant(_ parameters: ImmigrantSearchDTO) -> AnyPublisher<[ImmigrantOM], any Error>
+    func fetchImmigrant(_ parameters: ImmigrantSearchDTO) -> AnyPublisher<ImmigrantOM?, any Error>
+    func fetchImmigrants(_ parameters: ImmigrantSearchDTO) -> AnyPublisher<[ImmigrantOM], any Error>
     func fetchImmigrant(_ byGroupId: Int) -> AnyPublisher<[ImmigrantOM], any Error>
 }

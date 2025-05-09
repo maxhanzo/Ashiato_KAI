@@ -22,13 +22,6 @@ public struct ImmigrantLocalRepository {
 }
 
 extension ImmigrantLocalRepository: ImmigrantRepository {
-    public func getImmigrant(_ parameters: ImmigrantSearchDTO) -> AnyPublisher<[ImmigrantOM], any Error> {
-        fatalError("Service not implemented!")
-    }
-
-    public func getImmigrants(_ groupID: Int) -> AnyPublisher<[ImmigrantOM], any Error> {
-        fatalError("Service not implemented!")
-    }
     
     public func save(_ immigrant: ImmigrantOM) -> AnyPublisher<ImmigrantOM, any Error> {
         dataBase
@@ -64,7 +57,52 @@ extension ImmigrantLocalRepository: ImmigrantRepository {
             .eraseToAnyPublisher()
     }
     
-    public func fetch(_ byGroupId: Int) -> AnyPublisher<[ImmigrantOM], any Error> {
+    public func fetchImmigrants(_ parameters: ImmigrantSearchDTO) -> AnyPublisher<[ImmigrantOM], any Error> {
+        let settings: FetchSettings<ImmigrantOM> = .init(
+            predicate: #Predicate { immigrant in
+                var matches = true
+                
+                if let immigrantId = parameters.immigrantId {
+                    matches = matches && immigrant.immigrantId == immigrantId
+                }
+                if let nameRomaji = parameters.nameRomaji {
+                    matches = matches && immigrant.nameRomaji.localizedStandardContains(nameRomaji)
+                }
+                if let surnameRomaji = parameters.surnameRomaji {
+                    matches = matches && immigrant.surnameRomaji.localizedStandardContains(surnameRomaji)
+                }
+                if let groupId = parameters.groupId {
+                    matches = matches && immigrant.groupId == groupId
+                }
+                if let year = parameters.year {
+                    matches = matches && immigrant.year == year
+                }
+                if let arrivalDate = parameters.arrivalDate?.toDate() {
+                    matches = matches && immigrant.arrivalDate == arrivalDate
+                }
+                if let departureDate = parameters.departureDate?.toDate() {
+                    matches = matches && immigrant.departureDate == departureDate
+                }
+                if let shipName = parameters.shipName {
+                    matches = matches && immigrant.shipName.localizedStandardContains(shipName)
+                }
+                if let prefectureName = parameters.prefectureName {
+                    matches = matches && immigrant.prefectureName.localizedStandardContains(prefectureName)
+                }
+                
+                return matches
+            }
+        )
+        
+        return dataBase.fetch(settings)
+            .mapError { _ -> Error in
+                ImmigrantError.couldntFindImmigrants
+            }
+            .eraseToAnyPublisher()
+    }
+
+    
+    public func fetchImmigrants(_ byGroupId: Int) -> AnyPublisher<[ImmigrantOM], any Error> {
         let settings: FetchSettings<ImmigrantOM> = .init(
             predicate: #Predicate { $0.groupId == byGroupId }
         )

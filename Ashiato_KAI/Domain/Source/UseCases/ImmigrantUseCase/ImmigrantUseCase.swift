@@ -31,12 +31,32 @@ public class ImmigrantUseCase {
     }
 }
 
-//extension ImmigrantUseCase: ImmigrantUseCaseInterface {
-//    public func fetchImmigrant(_ parameters: ImmigrantSearchDTO) -> AnyPublisher<[ImmigrantOM], any Error> {
-//        <#code#>
-//    }
-//    
-//    public func fetchImmigrant(_ byGroupId: Int) -> AnyPublisher<[ImmigrantOM], any Error> {
-//        <#code#>
-//    }
-//}
+extension ImmigrantUseCase: ImmigrantUseCaseInterface {
+    
+    public func fetchImmigrant(_ byGroupId: Int) -> AnyPublisher<[ImmigrantOM], any Error> {
+        let parameters = ImmigrantSearchDTO(groupId: byGroupId)
+        return fetchImmigrants(parameters)
+    }
+ 
+    public func fetchImmigrants(_ parameters: ImmigrantSearchDTO) -> AnyPublisher<[ImmigrantOM], any Error> {
+        local.fetchImmigrants(parameters)
+            .catch { _ in self.remote.fetchImmigrants(parameters) }
+            .flatMap { localOrRemoteResults -> AnyPublisher<[ImmigrantOM], any Error> in
+                self.local.save(localOrRemoteResults)
+                    .map { _ in localOrRemoteResults }
+                    .eraseToAnyPublisher()
+            }
+            .eraseToAnyPublisher()
+    }
+
+    public func fetchImmigrant(_ parameters: ImmigrantSearchDTO) -> AnyPublisher<ImmigrantOM?, any Error> {
+        local.fetchImmigrants(parameters)
+            .catch { _ in self.remote.fetchImmigrants(parameters) }
+            .flatMap { localOrRemoteResults -> AnyPublisher<ImmigrantOM?, any Error> in
+                self.local.save(localOrRemoteResults)
+                    .map { _ in localOrRemoteResults.first }
+                    .eraseToAnyPublisher()
+            }
+            .eraseToAnyPublisher()
+    }
+}
