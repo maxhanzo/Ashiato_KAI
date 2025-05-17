@@ -1,6 +1,6 @@
 //
 //  URLRequest+Extensions.swift
-//  GGData
+//  AshiatoData
 //
 //  Created by UedaSoft IT Solutions on 27/05/25.
 //
