@@ -1,8 +1,8 @@
 //
 //  Persistence.swift
-//  Ashiato: KAI
+//  Ashiato_KAI
 //
-//  Created by UedaSoft IT Solutions on 05/05/25.
+//  Created by Max Ueda on 05/06/25.
 //
 
 import CoreData
@@ -32,7 +32,7 @@ struct PersistenceController {
     let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "Ashiato__KAI")
+        container = NSPersistentContainer(name: "Ashiato_KAI")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }

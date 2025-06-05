@@ -1,13 +1,13 @@
 //
-//  Ashiato__KAIUITests.swift
-//  Ashiato: KAIUITests
+//  Ashiato_KAIUITests.swift
+//  Ashiato_KAIUITests
 //
-//  Created by UedaSoft IT Solutions on 05/05/25.
+//  Created by Max Ueda on 05/06/25.
 //
 
 import XCTest
 
-final class Ashiato__KAIUITests: XCTestCase {
+final class Ashiato_KAIUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -1,13 +1,13 @@
 //
-//  Ashiato__KAIUITestsLaunchTests.swift
-//  Ashiato: KAIUITests
+//  Ashiato_KAIUITestsLaunchTests.swift
+//  Ashiato_KAIUITests
 //
-//  Created by UedaSoft IT Solutions on 05/05/25.
+//  Created by Max Ueda on 05/06/25.
 //
 
 import XCTest
 
-final class Ashiato__KAIUITestsLaunchTests: XCTestCase {
+final class Ashiato_KAIUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

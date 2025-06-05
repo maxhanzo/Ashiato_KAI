@@ -7,62 +7,62 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
-		1C6E2A542DC94CDD00C7F701 /* PBXContainerItemProxy */ = {
+		1C7E224F2DF175BC005E6399 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1C6E2A392DC94CDC00C7F701 /* Project object */;
+			containerPortal = 1C7E22342DF175BB005E6399 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1C6E2A402DC94CDC00C7F701;
-			remoteInfo = "Ashiato: KAI";
+			remoteGlobalIDString = 1C7E223B2DF175BB005E6399;
+			remoteInfo = Ashiato_KAI;
 		};
-		1C6E2A5E2DC94CDD00C7F701 /* PBXContainerItemProxy */ = {
+		1C7E22592DF175BC005E6399 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1C6E2A392DC94CDC00C7F701 /* Project object */;
+			containerPortal = 1C7E22342DF175BB005E6399 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1C6E2A402DC94CDC00C7F701;
-			remoteInfo = "Ashiato: KAI";
+			remoteGlobalIDString = 1C7E223B2DF175BB005E6399;
+			remoteInfo = Ashiato_KAI;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C6E2A412DC94CDC00C7F701 /* Ashiato_KAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ashiato_KAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C6E2A532DC94CDD00C7F701 /* Ashiato_KAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ashiato_KAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C6E2A5D2DC94CDD00C7F701 /* Ashiato_KAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ashiato_KAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C7E223C2DF175BB005E6399 /* Ashiato_KAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ashiato_KAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C7E224E2DF175BC005E6399 /* Ashiato_KAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ashiato_KAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C7E22582DF175BC005E6399 /* Ashiato_KAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ashiato_KAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1C6E2A432DC94CDC00C7F701 /* Ashiato_KAI */ = {
+		1C7E223E2DF175BB005E6399 /* Ashiato_KAI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Ashiato_KAI;
 			sourceTree = "<group>";
 		};
-		1C6E2A562DC94CDD00C7F701 /* Ashiato: KAITests */ = {
+		1C7E22512DF175BC005E6399 /* Ashiato_KAITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Ashiato: KAITests";
+			path = Ashiato_KAITests;
 			sourceTree = "<group>";
 		};
-		1C6E2A602DC94CDD00C7F701 /* Ashiato: KAIUITests */ = {
+		1C7E225B2DF175BC005E6399 /* Ashiato_KAIUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Ashiato: KAIUITests";
+			path = Ashiato_KAIUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1C6E2A3E2DC94CDC00C7F701 /* Frameworks */ = {
+		1C7E22392DF175BB005E6399 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1C6E2A502DC94CDD00C7F701 /* Frameworks */ = {
+		1C7E224B2DF175BC005E6399 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1C6E2A5A2DC94CDD00C7F701 /* Frameworks */ = {
+		1C7E22552DF175BC005E6399 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,22 +72,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C6E2A382DC94CDC00C7F701 = {
+		1C7E22332DF175BB005E6399 = {
 			isa = PBXGroup;
 			children = (
-				1C6E2A432DC94CDC00C7F701 /* Ashiato_KAI */,
-				1C6E2A562DC94CDD00C7F701 /* Ashiato: KAITests */,
-				1C6E2A602DC94CDD00C7F701 /* Ashiato: KAIUITests */,
-				1C6E2A422DC94CDC00C7F701 /* Products */,
+				1C7E223E2DF175BB005E6399 /* Ashiato_KAI */,
+				1C7E22512DF175BC005E6399 /* Ashiato_KAITests */,
+				1C7E225B2DF175BC005E6399 /* Ashiato_KAIUITests */,
+				1C7E223D2DF175BB005E6399 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1C6E2A422DC94CDC00C7F701 /* Products */ = {
+		1C7E223D2DF175BB005E6399 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1C6E2A412DC94CDC00C7F701 /* Ashiato_KAI.app */,
-				1C6E2A532DC94CDD00C7F701 /* Ashiato_KAITests.xctest */,
-				1C6E2A5D2DC94CDD00C7F701 /* Ashiato_KAIUITests.xctest */,
+				1C7E223C2DF175BB005E6399 /* Ashiato_KAI.app */,
+				1C7E224E2DF175BC005E6399 /* Ashiato_KAITests.xctest */,
+				1C7E22582DF175BC005E6399 /* Ashiato_KAIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,134 +95,134 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1C6E2A402DC94CDC00C7F701 /* Ashiato_KAI */ = {
+		1C7E223B2DF175BB005E6399 /* Ashiato_KAI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1C6E2A672DC94CDD00C7F701 /* Build configuration list for PBXNativeTarget "Ashiato_KAI" */;
+			buildConfigurationList = 1C7E22622DF175BC005E6399 /* Build configuration list for PBXNativeTarget "Ashiato_KAI" */;
 			buildPhases = (
-				1C6E2A3D2DC94CDC00C7F701 /* Sources */,
-				1C6E2A3E2DC94CDC00C7F701 /* Frameworks */,
-				1C6E2A3F2DC94CDC00C7F701 /* Resources */,
+				1C7E22382DF175BB005E6399 /* Sources */,
+				1C7E22392DF175BB005E6399 /* Frameworks */,
+				1C7E223A2DF175BB005E6399 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				1C6E2A432DC94CDC00C7F701 /* Ashiato_KAI */,
+				1C7E223E2DF175BB005E6399 /* Ashiato_KAI */,
 			);
 			name = Ashiato_KAI;
 			packageProductDependencies = (
 			);
-			productName = "Ashiato: KAI";
-			productReference = 1C6E2A412DC94CDC00C7F701 /* Ashiato_KAI.app */;
+			productName = Ashiato_KAI;
+			productReference = 1C7E223C2DF175BB005E6399 /* Ashiato_KAI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1C6E2A522DC94CDD00C7F701 /* Ashiato_KAITests */ = {
+		1C7E224D2DF175BC005E6399 /* Ashiato_KAITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1C6E2A6A2DC94CDD00C7F701 /* Build configuration list for PBXNativeTarget "Ashiato_KAITests" */;
+			buildConfigurationList = 1C7E22652DF175BC005E6399 /* Build configuration list for PBXNativeTarget "Ashiato_KAITests" */;
 			buildPhases = (
-				1C6E2A4F2DC94CDD00C7F701 /* Sources */,
-				1C6E2A502DC94CDD00C7F701 /* Frameworks */,
-				1C6E2A512DC94CDD00C7F701 /* Resources */,
+				1C7E224A2DF175BC005E6399 /* Sources */,
+				1C7E224B2DF175BC005E6399 /* Frameworks */,
+				1C7E224C2DF175BC005E6399 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1C6E2A552DC94CDD00C7F701 /* PBXTargetDependency */,
+				1C7E22502DF175BC005E6399 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				1C6E2A562DC94CDD00C7F701 /* Ashiato: KAITests */,
+				1C7E22512DF175BC005E6399 /* Ashiato_KAITests */,
 			);
 			name = Ashiato_KAITests;
 			packageProductDependencies = (
 			);
-			productName = "Ashiato: KAITests";
-			productReference = 1C6E2A532DC94CDD00C7F701 /* Ashiato_KAITests.xctest */;
+			productName = Ashiato_KAITests;
+			productReference = 1C7E224E2DF175BC005E6399 /* Ashiato_KAITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1C6E2A5C2DC94CDD00C7F701 /* Ashiato_KAIUITests */ = {
+		1C7E22572DF175BC005E6399 /* Ashiato_KAIUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1C6E2A6D2DC94CDD00C7F701 /* Build configuration list for PBXNativeTarget "Ashiato_KAIUITests" */;
+			buildConfigurationList = 1C7E22682DF175BC005E6399 /* Build configuration list for PBXNativeTarget "Ashiato_KAIUITests" */;
 			buildPhases = (
-				1C6E2A592DC94CDD00C7F701 /* Sources */,
-				1C6E2A5A2DC94CDD00C7F701 /* Frameworks */,
-				1C6E2A5B2DC94CDD00C7F701 /* Resources */,
+				1C7E22542DF175BC005E6399 /* Sources */,
+				1C7E22552DF175BC005E6399 /* Frameworks */,
+				1C7E22562DF175BC005E6399 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1C6E2A5F2DC94CDD00C7F701 /* PBXTargetDependency */,
+				1C7E225A2DF175BC005E6399 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				1C6E2A602DC94CDD00C7F701 /* Ashiato: KAIUITests */,
+				1C7E225B2DF175BC005E6399 /* Ashiato_KAIUITests */,
 			);
 			name = Ashiato_KAIUITests;
 			packageProductDependencies = (
 			);
-			productName = "Ashiato: KAIUITests";
-			productReference = 1C6E2A5D2DC94CDD00C7F701 /* Ashiato_KAIUITests.xctest */;
+			productName = Ashiato_KAIUITests;
+			productReference = 1C7E22582DF175BC005E6399 /* Ashiato_KAIUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1C6E2A392DC94CDC00C7F701 /* Project object */ = {
+		1C7E22342DF175BB005E6399 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
-					1C6E2A402DC94CDC00C7F701 = {
+					1C7E223B2DF175BB005E6399 = {
 						CreatedOnToolsVersion = 16.3;
 					};
-					1C6E2A522DC94CDD00C7F701 = {
+					1C7E224D2DF175BC005E6399 = {
 						CreatedOnToolsVersion = 16.3;
-						TestTargetID = 1C6E2A402DC94CDC00C7F701;
+						TestTargetID = 1C7E223B2DF175BB005E6399;
 					};
-					1C6E2A5C2DC94CDD00C7F701 = {
+					1C7E22572DF175BC005E6399 = {
 						CreatedOnToolsVersion = 16.3;
-						TestTargetID = 1C6E2A402DC94CDC00C7F701;
+						TestTargetID = 1C7E223B2DF175BB005E6399;
 					};
 				};
 			};
-			buildConfigurationList = 1C6E2A3C2DC94CDC00C7F701 /* Build configuration list for PBXProject "Ashiato_KAI" */;
+			buildConfigurationList = 1C7E22372DF175BB005E6399 /* Build configuration list for PBXProject "Ashiato_KAI" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 1C6E2A382DC94CDC00C7F701;
+			mainGroup = 1C7E22332DF175BB005E6399;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 1C6E2A422DC94CDC00C7F701 /* Products */;
+			productRefGroup = 1C7E223D2DF175BB005E6399 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1C6E2A402DC94CDC00C7F701 /* Ashiato_KAI */,
-				1C6E2A522DC94CDD00C7F701 /* Ashiato_KAITests */,
-				1C6E2A5C2DC94CDD00C7F701 /* Ashiato_KAIUITests */,
+				1C7E223B2DF175BB005E6399 /* Ashiato_KAI */,
+				1C7E224D2DF175BC005E6399 /* Ashiato_KAITests */,
+				1C7E22572DF175BC005E6399 /* Ashiato_KAIUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1C6E2A3F2DC94CDC00C7F701 /* Resources */ = {
+		1C7E223A2DF175BB005E6399 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1C6E2A512DC94CDD00C7F701 /* Resources */ = {
+		1C7E224C2DF175BC005E6399 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1C6E2A5B2DC94CDD00C7F701 /* Resources */ = {
+		1C7E22562DF175BC005E6399 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,21 +232,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1C6E2A3D2DC94CDC00C7F701 /* Sources */ = {
+		1C7E22382DF175BB005E6399 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1C6E2A4F2DC94CDD00C7F701 /* Sources */ = {
+		1C7E224A2DF175BC005E6399 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1C6E2A592DC94CDD00C7F701 /* Sources */ = {
+		1C7E22542DF175BC005E6399 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,25 +256,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1C6E2A552DC94CDD00C7F701 /* PBXTargetDependency */ = {
+		1C7E22502DF175BC005E6399 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1C6E2A402DC94CDC00C7F701 /* Ashiato_KAI */;
-			targetProxy = 1C6E2A542DC94CDD00C7F701 /* PBXContainerItemProxy */;
+			target = 1C7E223B2DF175BB005E6399 /* Ashiato_KAI */;
+			targetProxy = 1C7E224F2DF175BC005E6399 /* PBXContainerItemProxy */;
 		};
-		1C6E2A5F2DC94CDD00C7F701 /* PBXTargetDependency */ = {
+		1C7E225A2DF175BC005E6399 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1C6E2A402DC94CDC00C7F701 /* Ashiato_KAI */;
-			targetProxy = 1C6E2A5E2DC94CDD00C7F701 /* PBXContainerItemProxy */;
+			target = 1C7E223B2DF175BB005E6399 /* Ashiato_KAI */;
+			targetProxy = 1C7E22592DF175BC005E6399 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1C6E2A652DC94CDD00C7F701 /* Debug */ = {
+		1C7E22602DF175BC005E6399 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BASE_URL = "https://ehgexuqkfkbvpmyfxnls.supabase.co";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -308,7 +307,6 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				FIREBASE_URI = "";
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -334,12 +332,11 @@
 			};
 			name = Debug;
 		};
-		1C6E2A662DC94CDD00C7F701 /* Release */ = {
+		1C7E22612DF175BC005E6399 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BASE_URL = "https://ehgexuqkfkbvpmyfxnls.supabase.co";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -373,7 +370,6 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				FIREBASE_URI = "";
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -392,7 +388,7 @@
 			};
 			name = Release;
 		};
-		1C6E2A682DC94CDD00C7F701 /* Debug */ = {
+		1C7E22632DF175BC005E6399 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -401,31 +397,25 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Ashiato改";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.uedasoft.ashiato-kai";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uedasoft.ashiato-kai.Ashiato-KAI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1C6E2A692DC94CDD00C7F701 /* Release */ = {
+		1C7E22642DF175BC005E6399 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -434,31 +424,25 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Ashiato改";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.uedasoft.ashiato-kai";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uedasoft.ashiato-kai.Ashiato-KAI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		1C6E2A6B2DC94CDD00C7F701 /* Debug */ = {
+		1C7E22662DF175BC005E6399 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -467,7 +451,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.uedasoft.ashiato-kai.Ashiato--KAITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uedasoft.ashiato-kai.Ashiato-KAITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -476,7 +460,7 @@
 			};
 			name = Debug;
 		};
-		1C6E2A6C2DC94CDD00C7F701 /* Release */ = {
+		1C7E22672DF175BC005E6399 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,7 +469,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.uedasoft.ashiato-kai.Ashiato--KAITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uedasoft.ashiato-kai.Ashiato-KAITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -494,78 +478,78 @@
 			};
 			name = Release;
 		};
-		1C6E2A6E2DC94CDD00C7F701 /* Debug */ = {
+		1C7E22692DF175BC005E6399 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.uedasoft.ashiato-kai.Ashiato--KAIUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uedasoft.ashiato-kai.Ashiato-KAIUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Ashiato: KAI";
+				TEST_TARGET_NAME = Ashiato_KAI;
 			};
 			name = Debug;
 		};
-		1C6E2A6F2DC94CDD00C7F701 /* Release */ = {
+		1C7E226A2DF175BC005E6399 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.uedasoft.ashiato-kai.Ashiato--KAIUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uedasoft.ashiato-kai.Ashiato-KAIUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Ashiato: KAI";
+				TEST_TARGET_NAME = Ashiato_KAI;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1C6E2A3C2DC94CDC00C7F701 /* Build configuration list for PBXProject "Ashiato_KAI" */ = {
+		1C7E22372DF175BB005E6399 /* Build configuration list for PBXProject "Ashiato_KAI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C6E2A652DC94CDD00C7F701 /* Debug */,
-				1C6E2A662DC94CDD00C7F701 /* Release */,
+				1C7E22602DF175BC005E6399 /* Debug */,
+				1C7E22612DF175BC005E6399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1C6E2A672DC94CDD00C7F701 /* Build configuration list for PBXNativeTarget "Ashiato_KAI" */ = {
+		1C7E22622DF175BC005E6399 /* Build configuration list for PBXNativeTarget "Ashiato_KAI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C6E2A682DC94CDD00C7F701 /* Debug */,
-				1C6E2A692DC94CDD00C7F701 /* Release */,
+				1C7E22632DF175BC005E6399 /* Debug */,
+				1C7E22642DF175BC005E6399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1C6E2A6A2DC94CDD00C7F701 /* Build configuration list for PBXNativeTarget "Ashiato_KAITests" */ = {
+		1C7E22652DF175BC005E6399 /* Build configuration list for PBXNativeTarget "Ashiato_KAITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C6E2A6B2DC94CDD00C7F701 /* Debug */,
-				1C6E2A6C2DC94CDD00C7F701 /* Release */,
+				1C7E22662DF175BC005E6399 /* Debug */,
+				1C7E22672DF175BC005E6399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1C6E2A6D2DC94CDD00C7F701 /* Build configuration list for PBXNativeTarget "Ashiato_KAIUITests" */ = {
+		1C7E22682DF175BC005E6399 /* Build configuration list for PBXNativeTarget "Ashiato_KAIUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C6E2A6E2DC94CDD00C7F701 /* Debug */,
-				1C6E2A6F2DC94CDD00C7F701 /* Release */,
+				1C7E22692DF175BC005E6399 /* Debug */,
+				1C7E226A2DF175BC005E6399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1C6E2A392DC94CDC00C7F701 /* Project object */;
+	rootObject = 1C7E22342DF175BB005E6399 /* Project object */;
 }

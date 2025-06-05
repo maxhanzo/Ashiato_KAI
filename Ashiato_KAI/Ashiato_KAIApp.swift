@@ -1,19 +1,19 @@
 //
-//  Ashiato__KAIApp.swift
-//  Ashiato: KAI
+//  Ashiato_KAIApp.swift
+//  Ashiato_KAI
 //
-//  Created by UedaSoft IT Solutions on 05/05/25.
+//  Created by Max Ueda on 05/06/25.
 //
 
 import SwiftUI
 
 @main
-struct Ashiato__KAIApp: App {
+struct Ashiato_KAIApp: App {
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
