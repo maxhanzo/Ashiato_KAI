@@ -1,14 +1,14 @@
 //
-//  UtilitiesTests.swift
-//  AshiatoUtilities
+//  AshiatoDataTests.swift
+//  AshiatoData
 //
 //  Created by Max Ueda on 07/06/25.
 //
 
 import XCTest
-@testable import Utilities
+@testable import AshiatoData
 
-final class AshiatoUtilitiesTests: XCTestCase {
+final class AshiatoDataTests: XCTestCase {
     func testExample() throws {
         // XCTest Documentation
         // https://developer.apple.com/documentation/xctest

@@ -4,7 +4,9 @@
 //
 //  Created by Max Ueda on 08/05/25.
 //
+
 import Foundation
+import Models
 
 extension ImmigrantDTO: ModelMappable {
     public init(from model: ImmigrantOM) {

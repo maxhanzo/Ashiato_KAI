@@ -11,6 +11,13 @@
 		1C7E228F2DF41A09005E6399 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 1C7E228E2DF41A09005E6399 /* FirebaseAuthCombine-Community */; };
 		1C7E22912DF41A09005E6399 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1C7E22902DF41A09005E6399 /* FirebaseCore */; };
 		1C7E22942DF41A35005E6399 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1C7E22932DF41A35005E6399 /* Lottie */; };
+		1CEBD42F2DF4254800F04B05 /* AshiatoData in Frameworks */ = {isa = PBXBuildFile; productRef = 1CEBD42E2DF4254800F04B05 /* AshiatoData */; };
+		1CEBD4312DF4254800F04B05 /* AshiatoDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 1CEBD4302DF4254800F04B05 /* AshiatoDomain */; };
+		1CEBD4332DF4254800F04B05 /* AshiatoFeatures in Frameworks */ = {isa = PBXBuildFile; productRef = 1CEBD4322DF4254800F04B05 /* AshiatoFeatures */; };
+		1CEBD4352DF4254800F04B05 /* AKLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 1CEBD4342DF4254800F04B05 /* AKLogger */; };
+		1CEBD4372DF4254800F04B05 /* DesignPatterns in Frameworks */ = {isa = PBXBuildFile; productRef = 1CEBD4362DF4254800F04B05 /* DesignPatterns */; };
+		1CEBD4392DF4254800F04B05 /* Plugins in Frameworks */ = {isa = PBXBuildFile; productRef = 1CEBD4382DF4254800F04B05 /* Plugins */; };
+		1CEBD43B2DF4254800F04B05 /* Utilities in Frameworks */ = {isa = PBXBuildFile; productRef = 1CEBD43A2DF4254800F04B05 /* Utilities */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,9 +66,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CEBD4312DF4254800F04B05 /* AshiatoDomain in Frameworks */,
 				1C7E228D2DF41A09005E6399 /* FirebaseAuth in Frameworks */,
 				1C7E22912DF41A09005E6399 /* FirebaseCore in Frameworks */,
+				1CEBD4392DF4254800F04B05 /* Plugins in Frameworks */,
 				1C7E228F2DF41A09005E6399 /* FirebaseAuthCombine-Community in Frameworks */,
+				1CEBD4352DF4254800F04B05 /* AKLogger in Frameworks */,
+				1CEBD43B2DF4254800F04B05 /* Utilities in Frameworks */,
+				1CEBD4332DF4254800F04B05 /* AshiatoFeatures in Frameworks */,
+				1CEBD4372DF4254800F04B05 /* DesignPatterns in Frameworks */,
+				1CEBD42F2DF4254800F04B05 /* AshiatoData in Frameworks */,
 				1C7E22942DF41A35005E6399 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +103,7 @@
 				1C7E223E2DF175BB005E6399 /* Ashiato_KAI */,
 				1C7E22512DF175BC005E6399 /* Ashiato_KAITests */,
 				1C7E225B2DF175BC005E6399 /* Ashiato_KAIUITests */,
+				1CEBD42D2DF4254800F04B05 /* Frameworks */,
 				1C7E223D2DF175BB005E6399 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +116,13 @@
 				1C7E22582DF175BC005E6399 /* Ashiato_KAIUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1CEBD42D2DF4254800F04B05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +149,13 @@
 				1C7E228E2DF41A09005E6399 /* FirebaseAuthCombine-Community */,
 				1C7E22902DF41A09005E6399 /* FirebaseCore */,
 				1C7E22932DF41A35005E6399 /* Lottie */,
+				1CEBD42E2DF4254800F04B05 /* AshiatoData */,
+				1CEBD4302DF4254800F04B05 /* AshiatoDomain */,
+				1CEBD4322DF4254800F04B05 /* AshiatoFeatures */,
+				1CEBD4342DF4254800F04B05 /* AKLogger */,
+				1CEBD4362DF4254800F04B05 /* DesignPatterns */,
+				1CEBD4382DF4254800F04B05 /* Plugins */,
+				1CEBD43A2DF4254800F04B05 /* Utilities */,
 			);
 			productName = Ashiato_KAI;
 			productReference = 1C7E223C2DF175BB005E6399 /* Ashiato_KAI.app */;
@@ -648,6 +677,34 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1C7E22922DF41A35005E6399 /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
+		};
+		1CEBD42E2DF4254800F04B05 /* AshiatoData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AshiatoData;
+		};
+		1CEBD4302DF4254800F04B05 /* AshiatoDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AshiatoDomain;
+		};
+		1CEBD4322DF4254800F04B05 /* AshiatoFeatures */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AshiatoFeatures;
+		};
+		1CEBD4342DF4254800F04B05 /* AKLogger */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AKLogger;
+		};
+		1CEBD4362DF4254800F04B05 /* DesignPatterns */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DesignPatterns;
+		};
+		1CEBD4382DF4254800F04B05 /* Plugins */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Plugins;
+		};
+		1CEBD43A2DF4254800F04B05 /* Utilities */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Utilities;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
