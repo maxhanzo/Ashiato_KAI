@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1C7E228D2DF41A09005E6399 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1C7E228C2DF41A09005E6399 /* FirebaseAuth */; };
+		1C7E228F2DF41A09005E6399 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 1C7E228E2DF41A09005E6399 /* FirebaseAuthCombine-Community */; };
+		1C7E22912DF41A09005E6399 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1C7E22902DF41A09005E6399 /* FirebaseCore */; };
+		1C7E22942DF41A35005E6399 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1C7E22932DF41A35005E6399 /* Lottie */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1C7E224F2DF175BC005E6399 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +59,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C7E228D2DF41A09005E6399 /* FirebaseAuth in Frameworks */,
+				1C7E22912DF41A09005E6399 /* FirebaseCore in Frameworks */,
+				1C7E228F2DF41A09005E6399 /* FirebaseAuthCombine-Community in Frameworks */,
+				1C7E22942DF41A35005E6399 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +123,10 @@
 			);
 			name = Ashiato_KAI;
 			packageProductDependencies = (
+				1C7E228C2DF41A09005E6399 /* FirebaseAuth */,
+				1C7E228E2DF41A09005E6399 /* FirebaseAuthCombine-Community */,
+				1C7E22902DF41A09005E6399 /* FirebaseCore */,
+				1C7E22932DF41A35005E6399 /* Lottie */,
 			);
 			productName = Ashiato_KAI;
 			productReference = 1C7E223C2DF175BB005E6399 /* Ashiato_KAI.app */;
@@ -195,6 +210,13 @@
 			);
 			mainGroup = 1C7E22332DF175BB005E6399;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1C7E228B2DF41A09005E6399 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				1C7E22922DF41A35005E6399 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				1C7E22952DF41AB7005E6399 /* XCRemoteSwiftPackageReference "SwiftGenPlugin" */,
+				1C7E22962DF41AD2005E6399 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+				1C7E22972DF41BFD005E6399 /* XCRemoteSwiftPackageReference "NavigationBackport" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1C7E223D2DF175BB005E6399 /* Products */;
 			projectDirPath = "";
@@ -397,11 +419,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -409,9 +433,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uedasoft.ashiato-kai.Ashiato-KAI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -424,11 +452,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -436,9 +466,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uedasoft.ashiato-kai.Ashiato-KAI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -550,6 +584,72 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1C7E228B2DF41A09005E6399 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.14.0;
+			};
+		};
+		1C7E22922DF41A35005E6399 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.2;
+			};
+		};
+		1C7E22952DF41AB7005E6399 /* XCRemoteSwiftPackageReference "SwiftGenPlugin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftGen/SwiftGenPlugin";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.2;
+			};
+		};
+		1C7E22962DF41AD2005E6399 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.59.1;
+			};
+		};
+		1C7E22972DF41BFD005E6399 /* XCRemoteSwiftPackageReference "NavigationBackport" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnpatrickmorgan/NavigationBackport";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.11.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1C7E228C2DF41A09005E6399 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C7E228B2DF41A09005E6399 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		1C7E228E2DF41A09005E6399 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C7E228B2DF41A09005E6399 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		1C7E22902DF41A09005E6399 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C7E228B2DF41A09005E6399 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		1C7E22932DF41A35005E6399 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C7E22922DF41A35005E6399 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1C7E22342DF175BB005E6399 /* Project object */;
 }

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultCompletionName</key>
+	<string>Coordinator</string>
+	<key>Description</key>
+	<string>You can choose wich template you want</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>Name</string>
+			<key>Default</key>
+			<string>Name</string>
+			<key>Identifier</key>
+			<string>moduleName</string>
+			<key>Name</key>
+			<string>Name:</string>
+			<key>Required</key>
+			<string>YES</string>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName___</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>interface</string>
+			<key>Name</key>
+			<string>Choose the module:</string>
+			<key>Description</key>
+			<string>Select a option</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Default</key>
+			<string>Coordinator</string>
+			<key>Values</key>
+			<array>
+				<string>Coordinator</string>
+			</array>
+		</dict>
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>SortOrder</key>
+	<string>1</string>
+	<key>Summary</key>
+	<string>Simplify the creation for the Project</string>
+</dict>
+</plist>

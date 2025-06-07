@@ -1,0 +1,31 @@
+#!/bin/bash
+TEMPLATE_DIRECTORY=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+XCODE_DIR=$1
+
+if [ -z $XCODE_DIR ]; then
+        echo "Enter Xcode Path or press Return"
+        read -p "press return to use standar path: /Applications/Xcode.app/: " XCODE_DIR
+fi
+
+if [ -z $XCODE_DIR ]; then
+        XCODE_DIR="/Applications/Xcode.app/"
+fi
+
+SOURCE_DIRECTORY="${XCODE_DIR}Contents/Developer/Library/Xcode/Templates/File Templates/"
+
+echo "Installing Templates in: "
+echo "$SOURCE_DIRECTORY"
+
+if [ -d "$SOURCE_DIRECTORY" ]; then
+        eval cd '"$SOURCE_DIRECTORY"'
+        echo "Creating simbolyc symbols"
+        echo ${TEMPLATE_DIRECTORY}
+
+        sudo ln -sfn "${TEMPLATE_DIRECTORY}/MVVM-C Templates" "MVVM-C Templates"
+
+        echo "SUCESS"
+else
+        echo "Directory nonexistent"
+        echo "Check your Xcode Path"
+fi

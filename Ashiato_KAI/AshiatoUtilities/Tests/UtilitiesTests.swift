@@ -1,0 +1,19 @@
+//
+//  UtilitiesTests.swift
+//  AshiatoUtilities
+//
+//  Created by Max Ueda on 07/06/25.
+//
+
+import XCTest
+@testable import Utilities
+
+final class UtilitiesTests: XCTestCase {
+    func testExample() throws {
+        // XCTest Documentation
+        // https://developer.apple.com/documentation/xctest
+
+        // Defining Test Cases and Test Methods
+        // https://developer.apple.com/documentation/xctest/defining_test_cases_and_test_methods
+    }
+}
